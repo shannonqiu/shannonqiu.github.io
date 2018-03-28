@@ -39,14 +39,8 @@
       recognition.onresult = function(e) {
         document.getElementById('transcript').value
                                  = e.results[0][0].transcript;
-        if (document.getElementById('transcript').value == "paper jam") {
-		window.location.href = 'https://www.bing.com/';
-	};
-	else
-	{
         recognition.stop();
         document.getElementById('labnol').submit();
-	}
       };
 
       recognition.onerror = function(e) {
