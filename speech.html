@@ -21,6 +21,8 @@
   </div>
 </form>
 
+<form id="labnol2" method="get" action="https://www.bing.com">
+</form>
 <!-- HTML5 Speech Recognition API -->
 <script>
   function startDictation() {
@@ -40,11 +42,11 @@
                                  = e.results[0][0].transcript;
         recognition.stop();
        if (document.getElementById('transcript').value == "paper jam") {
-        window.location.href = 'https://www.bing.com';
+        document.getElementById('labnol2').submit();
        }
        else
        {
-         
+        document.getElementById('labnol').submit();
        }
       };
 
