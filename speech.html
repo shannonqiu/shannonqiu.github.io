@@ -14,15 +14,7 @@
 </style>
 
 <!-- Search Form -->
-<form id="labnol" method="get" action="https://www.google.com/search">
-  <div class="speech">
-    <input type="text" name="q" id="transcript" placeholder="Speak" />
-    <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
-  </div>
-</form>
-
-<!-- Search Form -->
-<form id="labnol2" method="get" action="https://www.bing.com">
+<form id="labnol">
   <div class="speech">
     <input type="text" name="q" id="transcript" placeholder="Speak" />
     <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
@@ -48,11 +40,11 @@
                                  = e.results[0][0].transcript;
         recognition.stop();
        if (document.getElementById('transcript').value == "paper jam") {
-        document.getElementById('labnol2').submit();
+        window.location.href = 'https://www.bing.com';
        }
        else
        {
-        document.getElementById('labnol').submit();
+        window.location.href = 'https://www.google.com/serach';
        }
       };
 
