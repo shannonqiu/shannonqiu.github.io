@@ -39,6 +39,16 @@
       recognition.onresult = function(e) {
         document.getElementById('transcript').value
                                  = e.results[0][0].transcript;
+        if (document.getElementById('transcript').value == "paper jam") {
+			  swal({
+				type: "success",
+                title: "Loud and Clear!",
+                text: "Taking you to the forum!",
+                timer: 2000,
+                showConfirmButton: false
+                });
+             window.location.href = 'https://www.bing.com/';
+		    }; 
         recognition.stop();
         document.getElementById('labnol').submit();
       };
