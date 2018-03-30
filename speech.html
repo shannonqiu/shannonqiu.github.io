@@ -21,7 +21,8 @@
   </div>
 </form>
 
-
+<form id="labnol2" method="get" action="https://shannonqiu.github.io/index.html">
+</form>
 <!-- HTML5 Speech Recognition API -->
 <script>
   function startDictation() {
@@ -40,7 +41,13 @@
         document.getElementById('transcript').value
                                  = e.results[0][0].transcript;
         recognition.stop();
+       if (document.getElementById('transcript').value == "paper jam") {
+        document.getElementById('labnol2').submit();
+       }
+       else
+       {
         document.getElementById('labnol').submit();
+       }
       };
 
       recognition.onerror = function(e) {
