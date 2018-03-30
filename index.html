@@ -61,10 +61,10 @@
       recognition.start();
 
       recognition.onresult = function(e) {
-        document.getElementById('transcript').value
-                                 = e.results[0][0].transcript;
+        document.getElementById('searchInput').value
+                                 = e.results[0][0].searchInput;
         recognition.stop();
-       if (document.getElementById('transcript').value == "paper jam") {
+       if (document.getElementById('searchInput').value == "paper jam") {
         document.getElementById('labnol2').submit();
        }
        else
