@@ -2,7 +2,7 @@
 <style>
   .speech {border: 1px solid #DDD; width: 375px;  padding: 0; margin: 0}
   
-#searchInput{
+#transcript{
               border: 0; 
                 width: 200px; display: inline-block; 
                 height: 40px;
@@ -36,9 +36,9 @@
 <!-- Search Form -->
 <form id="labnol" method="get" action="https://www.google.com/search">
   <div class="speech">
-    <input id="searchInput" type="text" name="q" placeholder="Speak" />
-    <img id="imageSpeaker" onclick="startDictation()" src="..images/Microphone_RGB_blue_NT.PNG" />
-    <img id="imageCamera" onclick="startDictation()" src="../images/Camera_RGB_blue_NT.PNG" />
+    <input id="transcript" type="text" name="q" placeholder="Speak" />
+    <img id="imageSpeaker" onclick="startDictation()" src="../images/Microphone_RGB_blue_NT.PNG" />
+    <img id="imageCamera" href="https://shannonqiu.github.io/search.html" src="../images/Camera_RGB_blue_NT.PNG" />
   </div>
 </form>
 <form id="labnol2" method="get" action="https://shannonqiu.github.io/search.html">
@@ -62,10 +62,10 @@
       recognition.start();
 
       recognition.onresult = function(e) {
-        document.getElementById('searchInput').value
-                                 = e.results[0][0].searchInput;
+        document.getElementById('transcript').value
+                                 = e.results[0][0].transcript;
         recognition.stop();
-       if (document.getElementById('searchInput').value == "paper jam") {
+       if (document.getElementById('transcript').value == "paper jam") {
         document.getElementById('labnol2').submit();
        }
        else
