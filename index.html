@@ -1,83 +1,66 @@
-<!-- CSS Styles -->
-<style>
-  .speech {border: 1px solid #DDD; width: 375px;  padding: 0; margin: 0}
-  
-#transcript{
-              border: 0; 
-                width: 200px; display: inline-block; 
-                height: 40px;
-                text-align: top;
-                 padding-bottom: 10px;
-        }
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
 
-  #imageSpeaker{
-              float: right; 
-              width: 40px;
-              padding-right: 10px;
-              padding-top: 15px;
-              padding-bottom: 0px;
-        }
-        #imageCamera{
-              float: center; 
-              width: 40px;
-              padding-top: 15px;
-              padding-left: 60px;
-              padding-bottom: 0px;
-        }
-         #lnkLabel{
-              float: center; 
-              width: 40px;
-              padding-left: 0px;
-              padding-bottom: 0px;
-        }
-</style>
+<h1>MT Web page</h1>
 
- <img  src="../images/Top_image.png" />
-<!-- Search Form -->
-<form id="labnol" method="get" action="https://www.google.com/search">
-  <div class="speech">
-    <input id="transcript" type="text" name="q" placeholder="Speak" />
-    <img id="imageSpeaker" onclick="startDictation()" src="../images/Microphone_RGB_blue.PNG" />
-    <img id="imageCamera" href="https://shannonqiu.github.io/search.html" src="../images/Camera_RGB_blue_NT.PNG" />
-  </div>
-</form>
-<form id="labnol2" method="get" action="https://shannonqiu.github.io/search.html">
-</form>
-<br>
- <img  src="../images/buttons.png" />
-<br>
-<span id="lnkLabel" > this is a lilnk<a target="_blank" href="https://shannonqiu.github.io/index.html" >link to index.html.</a></span>
-<!-- HTML5 Speech Recognition API -->
-<script>
-  function startDictation() {
+<p>Translate this page:</p>
 
-    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+<div id="google_translate_element"></div>
 
-      var recognition = new webkitSpeechRecognition();
-
-      recognition.continuous = false;
-      recognition.interimResults = false;
-
-      recognition.lang = "en-US";
-      recognition.start();
-
-      recognition.onresult = function(e) {
-        document.getElementById('transcript').value
-                                 = e.results[0][0].transcript;
-        recognition.stop();
-       if (document.getElementById('transcript').value == "paper jam") {
-        document.getElementById('labnol2').submit();
-       }
-       else
-       {
-        document.getElementById('labnol').submit();
-       }
-      };
-
-      recognition.onerror = function(e) {
-        recognition.stop();
-      }
-
-    }
-  }
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
 </script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<h2>Print documents</h2>
+<h5>To print documents (Windows)</h5>
+<ol>
+<li><u>Load paper</u> in the input</li>
+<li>From your software, select <strong>Print</strong>.</li>
+<li>Make sure your printer is</li>
+<li>Click <strong>Print </strong>or <strong>OK </strong>to begin printing.</li>
+</ol>
+<h5>To print documents (OS X)</h5>
+<ol>
+<li>From the <strong>File </strong>menu in your software, choose <strong>Print</strong>.</li>
+<li>Make sure your printer is</li>
+<li>Set the print</li>
+<li>Click <strong>Print</strong>.</li>
+</ol>
+<h2>Print brochures</h2>
+<h5>To print brochures (Windows)</h5>
+<ol>
+<li><u>Load paper</u> in the input</li>
+<li>On the <strong>File </strong>menu in your software application, click <strong>Print </strong>.</li>
+<li>Make sure your printer is</li>
+<li>Click <strong>Print </strong>or <strong>OK </strong>to begin printing.</li>
+</ol>
+<h5>To print brochures (OS X)</h5>
+<ol>
+<li>From the <strong>File </strong>menu in your software, choose <strong>Print</strong>.</li>
+<li>Make sure your printer is selected</li>
+<li>Click <strong>Print</strong>.</li>
+</ol>
+<h2>Print on envelopes</h2>
+<h5>To print envelopes (Windows)</h5>
+<ol>
+<li><u>Load paper</u> in the input</li>
+<li>On the <strong>File </strong>menu in your software, click <strong>Print</strong>.</li>
+<li>Make sure your printer is</li>
+<li>Click <strong>Print </strong>or <strong>OK </strong>to begin printing.</li>
+</ol>
+<h5>To print envelopes (OS X)</h5>
+<ol>
+<li>From the <strong>File </strong>menu in your software, choose <strong>Print</strong>.</li>
+<li>Make sure your printer is</li>
+<li>Select the appropriate envelope size from the <strong>Paper Size </strong>pop-up</li>
+<li>From the pop-up menu, choose <strong>Paper Type/Quality</strong>, and verify the paper type setting is set to <strong>Plain Paper</strong>.</li>
+<li>Click <strong>Print</strong>.</li>
+</ol>
+</body>
+</html>
+
