@@ -11,18 +11,14 @@
         }
 
   #imageSpeaker{
-              float: right; 
-              width: 40px;
-              padding-right: 10px;
-              padding-top: 15px;
+              width: 15px;
+              padding-top: 5px;
+              padding-left: 65px;
               padding-bottom: 0px;
         }
         #imageCamera{
-              float: center; 
-              width: 40px;
-              padding-top: 15px;
-              padding-left: 60px;
-              padding-bottom: 0px;
+              width:30px;
+              padding-left: 30px;
         }
          #lnkLabel{
               float: center; 
@@ -32,21 +28,21 @@
         }
 </style>
 
- <img  src="../images/Top_image.png" />
+ <img  src="../images/Top_image.png" style="padding-bottom : 10px";>
 <!-- Search Form -->
 <form id="labnol" method="get" action="https://www.google.com/search">
   <div class="speech">
-    <input id="transcript" type="text" name="q" placeholder="Speak" />
-    <img id="imageSpeaker" onclick="startDictation()" src="../images/Microphone_RGB_blue.PNG" />
-    <img id="imageCamera" href="https://shannonqiu.github.io/search.html" src="../images/Camera_RGB_blue_NT.PNG" />
+    <input id="transcript" type="text" name="q" placeholder="Speak" >
+     <img id="imageSpeaker" onclick="startDictation()" src="../images/Microphone_RGB_blue_NT.PNG" >
+     <a href="https://shannonqiu.github.io/search.html">
+          <img id="imageCamera" src="../images/Camera_RGB_blue_NT.PNG">
+     </a>
   </div>
 </form>
 <form id="labnol2" method="get" action="https://shannonqiu.github.io/search.html">
 </form>
+ <img  src="../images/buttons.png" >
 <br>
- <img  src="../images/buttons.png" />
-<br>
-<span id="lnkLabel" > this is a lilnk<a target="_blank" href="https://shannonqiu.github.io/index.html" >link to index.html.</a></span>
 <!-- HTML5 Speech Recognition API -->
 <script>
   function startDictation() {
