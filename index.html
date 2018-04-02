@@ -34,12 +34,13 @@
   <div class="speech">
     <input id="transcript" type="text" name="q" placeholder="Speak" >
      <img id="imageSpeaker" onclick="startDictation()" src="../images/Microphone_RGB_blue_NT.PNG" >
-       
+      <a href="https://shannonqiu.github.io/search.html">
           <img id="imageCamera" src="../images/Camera_RGB_blue_NT.PNG">
      </a>
   </div>
 </form>
- 
+<form id="labnol2" method="get" action="https://shannonqiu.github.io/to_clear_a_paper_jam_from_the_rear_of_the_printer_step1.html">
+</form>
  <img  src="../images/buttons.png" >
 <br>
 <!-- HTML5 Speech Recognition API -->
@@ -61,7 +62,7 @@
                                  = e.results[0][0].transcript;
         recognition.stop();
        if (document.getElementById('transcript').value == "paper jam") {
-        document.getElementById('labnol').submit();
+        document.getElementById('labnol2').submit();
        }
        else
        {
