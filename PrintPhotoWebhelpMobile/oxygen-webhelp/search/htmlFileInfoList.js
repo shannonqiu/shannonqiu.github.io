@@ -1,0 +1,12 @@
+fil = new Array();
+fil["0"]= "general_instruction.html@@@General Instruction@@@...";
+fil["1"]= "notes___tips.html@@@notes & tips@@@...";
+fil["2"]= "print_from_mobile_device__ios__with_airprint.html@@@Print from mobile device (iOS) with AirPrint\u2122@@@...";
+fil["3"]= "print_from_mobile_device_with_android.html@@@Print from mobile device with Android@@@...";
+fil["4"]= "print_from_your_android_device_v5.0.html@@@Print from your Android device v5.0+@@@...";
+fil["5"]= "to_clear_a_paper_jam_from_the_front_of_the_printer.html@@@To clear a paper jam from the front of the printer@@@...";
+fil["6"]= "to_clear_a_paper_jam_from_the_output_area.html@@@To clear a paper jam from the output area@@@...";
+fil["7"]= "to_clear_a_paper_jam_from_the_rear_of_the_printer.html@@@To clear a paper jam from the rear of the printer@@@...";
+fil["8"]= "to_print_a_photo_from_the_computer__os_x_.html@@@To print a photo from the computer (OS X)@@@...";
+fil["9"]= "to_print_a_photo_from_the_computer__windows_.html@@@To print a photo from the computer (Windows)@@@...";
+var doStem = false;searchLoaded = true;

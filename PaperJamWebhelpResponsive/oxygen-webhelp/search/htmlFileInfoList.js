@@ -1,0 +1,6 @@
+fil = new Array();
+fil["0"]= "general_instruction.html@@@General Instruction@@@Solve paper jam issues. Use an HP online troubleshooting wizard Instructions for clearing the jam in the printer or in the document feeder and resolving issues with paper or the NOTE : The HP online...";
+fil["1"]= "to_clear_a_paper_jam_from_the_front_of_the_printer.html@@@To clear a paper jam from the front of the printer@@@1. Slide up to open the cartridge access door. 2. If the print carriage is not obstructed, move the print carriage to the far right of the printer and remove the jammed paper. If need, move the...";
+fil["2"]= "to_clear_a_paper_jam_from_the_output_area.html@@@To clear a paper jam from the output area@@@1. Slide up to open the cartridge access door. 2. Open the inside cover by lifting and moving it towards you. 3. Remove any jammed paper or scraps of paper. 4. Lower and press down the inside cover to...";
+fil["3"]= "to_clear_a_paper_jam_from_the_rear_of_the_printer.html@@@To clear a paper jam from the rear of the printer@@@Press the two tabs on the rear access door and open the door. Remove any jammed paper. Press the two buttons on the paper path cover, and pull the cover out of the printer completely. Remove any...";
+var doStem = false;searchLoaded = true;

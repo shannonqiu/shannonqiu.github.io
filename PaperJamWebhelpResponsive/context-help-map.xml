@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="general_instruction" path="general_instruction.html"/>
+   <appContext helpID="to_clear_a_paper_jam_from_the_front_of_the_printer"
+               path="to_clear_a_paper_jam_from_the_front_of_the_printer.html"/>
+   <appContext helpID="to_clear_a_paper_jam_from_the_rear_of_the_printer"
+               path="to_clear_a_paper_jam_from_the_rear_of_the_printer.html"/>
+   <appContext helpID="to_clear_a_paper_jam_from_the_output_area"
+               path="to_clear_a_paper_jam_from_the_output_area.html"/>
+</map>
